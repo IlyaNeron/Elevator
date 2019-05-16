@@ -1,0 +1,33 @@
+<div class="wrapper">
+	<form action="#" class="elevator-input">
+		<div class="form-col">
+			<p>Введите максимальное колличество этажей:</p>
+			<input type="number" class="floors_max_value" value="">
+			<button type="button" class="floor_btn">Accept</button>
+		</div>
+		<div class="form-col">
+			<p>Введите на каком этаже вы предполагаемо находитесь:</p>
+			<input type="number" class="user_floors_value" value="">
+			<button type="button" class="user_btn">Accept</button>
+		</div>
+		<div class="button-row">
+			<button type="button" class="generation_btn">Create Elevator</button>
+		</div>
+	</form>
+	<div class="elevator-body">
+		<div class="elevator_intarface">
+			<div class="elevator-display">
+				<ul class="li_parent">
+					<li #allTheseThings *ngFor="let li of li_elements; let i = index">{{i + 1}}</li>
+				</ul>
+				<div class="elevator_box_parent">
+				</div>
+			</div>
+			<div class="elevator-buttons">
+				<button #allTheseThings type="button" class="elevator-button" *ngFor="let button of button_elements; let i = index">{{i + 1}}</button>
+			</div>
+		</div>
+		<div class="btn_summon_parent">
+		</div>
+	</div>
+</div>

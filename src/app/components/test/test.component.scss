@@ -1,0 +1,170 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.wrapper {
+  text-align: center;
+}
+
+.elevator-body {
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+.floors {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column-reverse;
+  border: 5px solid #bbb;
+
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 11px 5px;
+
+    &:not(:first-child) {
+      border-bottom: 5px solid #333;
+    }
+
+  }
+
+}
+
+.elevator-display {
+  display: flex;
+  padding: 0 15px;
+}
+
+.elevator-output {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border: 5px solid #bbb;
+}
+
+::ng-deep .elevator-box {
+  background: #ff0000;
+  border: 5px solid #333;
+  height: 30px;
+  width: 30px;
+  transition: transform 0.3s linear;
+}
+
+.elevator_intarface {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 -15px 15px -15px;
+}
+
+.elevator-input {
+  border: 5px solid #bbb;
+  padding: 10px;
+  display: flex;
+  max-width: 500px;
+  margin: 0 auto 30px;
+  flex-wrap: wrap;
+
+  p {
+    margin: 0 0 20px;
+  }
+
+  input {
+    margin: 0;
+
+    &:not(:last-child) {
+      margin: 0 0 20px;
+    }
+
+  }
+
+}
+
+.form-col {
+  padding: 0 15px;
+  width: 44%;
+  margin: 0 0 20px;
+
+  button {
+    display: block;
+    margin: 0 auto;
+  }
+
+}
+
+.elevator-buttons {
+  padding: 0 15px;
+  margin: 0;
+  display: flex;
+  width: 90px;
+  flex-flow: column-reverse;
+  flex-wrap: wrap-reverse;
+  flex-direction: row;
+
+  button {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background: #ff0000;
+    color: #fff;
+    border: 1px solid #333;
+    margin: 0 0 10px;
+
+    &:nth-child(2n - 1) {
+      margin: 0 10px 10px 0;
+    }
+
+    &:disabled {
+      background: #bbb;
+      cursor: default;
+    }
+
+  }
+
+}
+
+.btn-summon-block {
+  border: 5px solid #bbb;
+  padding: 15px;
+}
+
+::ng-deep .btn_summon {
+  background: #ff0000;
+  color: #fff;
+  padding: 5px 15px;
+  border: 1px solid #333;
+  cursor: pointer;
+
+  &:disabled {
+    background: #bbb;
+    cursor: default;
+  }
+
+}
+
+.button-row {
+  width: 100%;
+
+  button {
+    padding: 15px 20px;
+  }
+
+}
+
+.generation_btn {
+  background: #008000;
+  color: #fff;
+  border: none;
+  outline: none;
+
+  &:disabled {
+    background: #bbb;
+    opacity: 0.5;
+  }
+
+}
